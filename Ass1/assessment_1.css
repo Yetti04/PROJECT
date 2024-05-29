@@ -1,0 +1,92 @@
+h1 {
+   /* position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%; left: 50%;
+    margin-bottom: -35px;
+    margin: 0 auto;
+    margin-left: 60px;
+    margin-top: -20px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px
+}
+
+fieldset {
+    width: 300px;
+    margin: auto;
+    margin-top: -35px;
+    border-width: 1px;
+
+}
+.bold {
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+#input {
+    font-size: 15px;
+    font-weight: 100px;
+    
+}
+      /*default placeholder style */
+input::placeholder {
+    color: grey;
+}
+
+    /* focused placeholder style*/
+    input.focused::placeholder {
+        color: #ffd700;
+    }
+input {
+    width: 300px;
+    height: 25px;
+    border-width: 1px;
+    transition: 0.4s;
+}
+
+.button-container{
+    text-align: center;
+    background-color: yellow;
+   border: none; border-radius: 15px;
+    width: 300px;
+    height: 20px;
+    padding: 5px ;
+}
+
+  .work {
+    text-align: center;
+    background-color: yellow;
+   border: none; border-radius: 15px;
+    width: 300px;
+    height: 20px;
+    padding: 5px ;
+  }
+  
+.confirm {
+    text-decoration-color: black;
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+    cursor: pointer;
+}
+ 
+.button-container:hover {
+    background-color: #ffd700;
+}
+
+.work:hover {
+    background-color: #ffd700;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: whitesmoke;
+}
+
+#sub{
+    padding: 3px;
+}
