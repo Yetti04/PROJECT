@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Classwork </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="SignUpBox">
+        <h2> BEIGE </h2>
+
+        <form id="customerForm">
+            <fieldset> 
+               <legend> Customer Information </legend> 
+                <input type="text" id="firstName" class="myInput" placeholder="First Name" required>
+                <br><br>
+                <input type="text" id="lastName"  class="myInput" placeholder="Last Name" required>
+                <br><br>
+                <input type="number" id="age" class="myInput" placeholder="Age" required>
+                <br><br>
+                <input type="number" id="phone"class="myInput"  placeholder="Phone Number" required>
+                <br><br>
+                <input type="email" id="email" class="myInput" placeholder="Email" required>
+                <br><br>
+                <input type="text"  id="address" class="myInput"  placeholder="Address" required>
+                <br><br>
+             </fieldset>  <br><br> 
+            
+            <div class="button-container">
+              <!-- <input type="submit" value="submit">-->
+                <br><button type="submit"> Submit </button>
+            </div>
+            <br><br>
+
+            <div class="SignIn">
+                <p> Need help? <a href="#"> Click me </a> </p>
+            </div>
+
+        </form>
+    </div>
+              <div id="message"></div>
+    <script> 
+                 //placeholder color change on click
+                 const inputs = document.querySelectorAll('.myInput');
+
+        inputs.forEach(input => {
+            input.addEventListener("focus", function() {
+                this.setAttribute('placeholder', ""); //clear placeholder text on focus
+                this.style.color = "blueviolet"; //change placeholder color on focus
+            });
+
+         input.addEventListener("blur", function() {
+                this.setAttribute("placeholder", this.getAttribute('data-placeholder'));
+                this.style.color = "whitesmoke"; // restore placeholder color on blur
+            });
+        });
+    </script>
+
+
+    <script>
+                      // At bottom of page display inputted data
+                        document.getElementById('customerForm').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        
+                        const firstName = document.getElementById('firstName').value;
+                        const lastName = document.getElementById('lastName').value;
+                        const age = document.getElementById('age').value;
+                        const phone = document.getElementById('phone').value;
+                        const email = document.getElementById('email').value;
+                        const address = document.getElementById('address').value;
+                        
+                        
+                        const customerData = `First Name: ${firstName}\nLast Name: ${lastName}\nAge: ${age}\nPhone Number: ${phone}\nEmail: ${email}\nAddress: ${address}`;
+                        
+                        document.getElementById('customerForm').reset();
+                        
+                        const message = document.createElement('p');
+                        message.textContent = customerData;
+                        document.body.appendChild(message);
+                    });
+
+    </script>
+
+</body>
+</html>

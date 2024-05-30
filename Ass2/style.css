@@ -1,0 +1,103 @@
+body {
+    background:url("img200.jpg") ;
+    background-size: 150% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+}
+
+.SignUpBox {
+    background:rgba(44, 62, 80, 0.7);
+    padding: 35px;
+    width: 250px; 
+    margin-top: 10px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h2{
+    margin-top: -15px;
+    text-align: center;
+}
+
+form{
+    width: 240px;
+    text-align: center;
+}
+
+input {
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    font-size: 18px;
+    font-weight: 200px;
+    padding: 3px 0;
+    transition: border 0.5s;
+    outline: none;
+    height: 20px;
+    color: white;
+}
+
+/*input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px
+}
+
+
+input[type="submit"] {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: blueviolet;
+} */
+
+
+
+button {
+    border: none;
+    width: 190px;
+    color: black;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 8px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: blueviolet;
+    color: white;
+}
+
+.SignUpBox h2 {
+    color: blueviolet; /* if there is plenty h2 or just use h2 direct if only one*/
+    font-weight: bold;
+    font-size: 40px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+.SignIn {
+    color: black;
+}
+
+::placeholder {
+    color: whitesmoke;
+    opacity: 0.5;
+}
